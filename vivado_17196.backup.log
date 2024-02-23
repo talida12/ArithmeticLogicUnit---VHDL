@@ -1,0 +1,1333 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Nov 25 10:46:39 2023
+# Process ID: 17196
+# Current directory: C:/Users/40756/Desktop/ALU - SSC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15644 C:\Users\40756\Desktop\ALU - SSC\ALU - SSC.xpr
+# Log file: C:/Users/40756/Desktop/ALU - SSC/vivado.log
+# Journal file: C:/Users/40756/Desktop/ALU - SSC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplier.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplier.vhd}
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 808.367 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 3 failed
+Time: 40 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 200ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 808.367 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 3 failed
+Time: 40 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 832.023 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 833.063 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 869.238 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {100ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 869.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 60 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 70 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 100 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 869.238 ; gain = 0.000
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Controller.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Controller.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplicand.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplicand.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd}}
+WARNING: [filemgmt 56-12] File 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd' cannot be added to the project because it already exists in the project, skipping this file
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplier.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplier.vhd}}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplicand.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplicand.vhd}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Controller.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Controller.vhd}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplier.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Multiplier.vhd}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/MultiplierResult.vhd}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 60 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 70 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 100 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 869.238 ; gain = 0.000
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/AND2.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/AND2.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NOT1.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NOT1.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND2.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND2.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND3.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND3.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/XOR2.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/XOR2.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/OR2.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/OR2.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_decoder.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_decoder.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/twoscomp_9bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/twoscomp_9bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/increment_9bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/increment_9bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/halfadd.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/halfadd.vhd}}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd}}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth8.vhd}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/ba_dut.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/ba_dut.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register_16bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register_16bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_0.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_0.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_1.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_1.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_2.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_2.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_3.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_3.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/barrel_shift9bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/barrel_shift9bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/two_to_one_mux.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/two_to_one_mux.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_adder.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_adder.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_2bit_block.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_2bit_block.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_4bit_block.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_4bit_block.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_10bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_10bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_12bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_12bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_14bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_14bit.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit.vhd}}
+remove_files  {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit.vhd}}
+file delete -force {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit.vhd}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit_block.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit_block.vhd}}
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/fulladder.vhd} w ]
+add_files {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/fulladder.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd}}
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 60 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 70 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 100 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 110 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 140 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 150 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 180 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 190 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 220 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 230 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 260 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 270 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 300 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 310 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 340 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 350 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 380 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 390 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 420 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 430 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 460 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 470 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 500 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 510 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 540 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 550 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 580 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 590 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 620 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 630 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 660 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 670 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 700 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 710 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 740 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 750 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 780 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 790 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 820 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 830 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 860 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 870 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 900 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 910 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 940 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 950 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 980 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 990 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 903.887 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Test Case 1 failed
+Time: 20 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 30 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 60 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 70 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 100 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 110 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 140 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 150 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 180 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 190 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 220 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 230 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 260 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 270 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 300 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 310 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 340 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 350 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 380 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 390 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 420 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 430 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 460 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 470 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 500 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 510 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 540 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 550 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 580 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 590 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 620 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 630 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 660 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 670 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 700 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 710 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 740 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 750 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 780 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 790 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 820 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 830 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 860 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 870 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 900 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 910 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 940 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 950 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 1 failed
+Time: 980 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+Error: Test Case 2 failed
+Time: 990 ns  Iteration: 0  Process: /CLA_TestBench/simulation_process  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 903.887 ; gain = 0.000
+set_property top Booth_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Booth_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Booth_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/XOR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity XOR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/OR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/AND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NOT1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NOT1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/fulladder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fulladder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/two_to_one_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity two_to_one_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rca_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/halfadd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfadd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/increment_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity increment_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_2bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_2bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/twoscomp_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity twoscomp_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_14bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_14bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_12bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_12bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/barrel_shift9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity barrel_shift_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DFF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/ba_dut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ba_dut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Booth_tb_behav xil_defaultlib.Booth_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.NAND2 [nand2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NAND3 [nand3_default]
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register [operand_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR2 [xor2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOT1 [not1_default]
+Compiling architecture behavioral of entity xil_defaultlib.AND2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.OR2 [or2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_decoder [booth_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.halfadd [halfadd_default]
+Compiling architecture behavioral of entity xil_defaultlib.increment_9bit [increment_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.twoscomp_9bit [twoscomp_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.two_to_one_mux [two_to_one_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shift_9bit [barrel_shift_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_0 [booth_unit_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_1 [booth_unit_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_2 [booth_unit_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_3 [booth_unit_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.fulladder [fulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.rca_4bit_block [rca_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_4bit_block [csa_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_2bit_block [csa_2bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_10bit [csa_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_14bit [csa_14bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_12bit [csa_12bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_adder [booth_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ba_dut [ba_dut_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register_16bit [operand_register_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Booth [booth_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_tb
+Built simulation snapshot Booth_tb_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Booth_tb_behav -key {Behavioral:sim_1:Functional:Booth_tb} -tclbatch {Booth_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source Booth_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Booth_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 903.887 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Booth_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Booth_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/XOR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity XOR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/OR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/AND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NOT1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NOT1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/fulladder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fulladder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/two_to_one_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity two_to_one_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rca_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/halfadd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfadd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/increment_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity increment_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_2bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_2bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/twoscomp_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity twoscomp_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_14bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_14bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_12bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_12bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/barrel_shift9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity barrel_shift_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DFF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/ba_dut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ba_dut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Booth_tb_behav xil_defaultlib.Booth_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.NAND2 [nand2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NAND3 [nand3_default]
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register [operand_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR2 [xor2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOT1 [not1_default]
+Compiling architecture behavioral of entity xil_defaultlib.AND2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.OR2 [or2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_decoder [booth_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.halfadd [halfadd_default]
+Compiling architecture behavioral of entity xil_defaultlib.increment_9bit [increment_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.twoscomp_9bit [twoscomp_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.two_to_one_mux [two_to_one_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shift_9bit [barrel_shift_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_0 [booth_unit_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_1 [booth_unit_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_2 [booth_unit_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_3 [booth_unit_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.fulladder [fulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.rca_4bit_block [rca_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_4bit_block [csa_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_2bit_block [csa_2bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_10bit [csa_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_14bit [csa_14bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_12bit [csa_12bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_adder [booth_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ba_dut [ba_dut_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register_16bit [operand_register_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Booth [booth_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_tb
+Built simulation snapshot Booth_tb_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Booth_tb_behav -key {Behavioral:sim_1:Functional:Booth_tb} -tclbatch {Booth_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source Booth_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: End flag detected at time 30000 ps
+Time: 30 ns  Iteration: 0  Process: /Booth_tb/monitor  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Booth_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 909.559 ; gain = 2.027
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Booth_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Booth_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/XOR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity XOR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/OR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/AND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NOT1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NOT1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/fulladder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fulladder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/two_to_one_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity two_to_one_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rca_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/halfadd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfadd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/increment_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity increment_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_2bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_2bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/twoscomp_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity twoscomp_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_14bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_14bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_12bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_12bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/barrel_shift9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity barrel_shift_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DFF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/ba_dut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ba_dut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Booth_tb_behav xil_defaultlib.Booth_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.NAND2 [nand2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NAND3 [nand3_default]
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register [operand_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR2 [xor2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOT1 [not1_default]
+Compiling architecture behavioral of entity xil_defaultlib.AND2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.OR2 [or2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_decoder [booth_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.halfadd [halfadd_default]
+Compiling architecture behavioral of entity xil_defaultlib.increment_9bit [increment_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.twoscomp_9bit [twoscomp_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.two_to_one_mux [two_to_one_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shift_9bit [barrel_shift_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_0 [booth_unit_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_1 [booth_unit_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_2 [booth_unit_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_3 [booth_unit_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.fulladder [fulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.rca_4bit_block [rca_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_4bit_block [csa_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_2bit_block [csa_2bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_10bit [csa_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_14bit [csa_14bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_12bit [csa_12bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_adder [booth_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ba_dut [ba_dut_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register_16bit [operand_register_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Booth [booth_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_tb
+Built simulation snapshot Booth_tb_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Booth_tb_behav -key {Behavioral:sim_1:Functional:Booth_tb} -tclbatch {Booth_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source Booth_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: End flag detected at time 30000 ps
+Time: 30 ns  Iteration: 0  Process: /Booth_tb/monitor  File: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Booth_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 911.320 ; gain = 1.551
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 913.039 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 25 20:27:43 2023...

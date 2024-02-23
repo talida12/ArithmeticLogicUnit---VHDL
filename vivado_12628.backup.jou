@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Dec 03 19:09:24 2023
+# Process ID: 12628
+# Current directory: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20920 C:\Users\40756\Desktop\An 3 Sem 1\SSC\Proiect\ALU - SSC\ALU - SSC.xpr
+# Log file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/vivado.log
+# Journal file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.xpr}
+set_property top RestoringDivision_TB [get_filesets sim_1]
+launch_simulation -noclean_dir
+source RestoringDivision_TB.tcl
+close_sim
+launch_simulation -noclean_dir

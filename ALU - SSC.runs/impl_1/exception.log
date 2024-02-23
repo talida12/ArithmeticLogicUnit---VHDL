@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\40756\Desktop\An 3 Sem 1\SSC\Proiect\ALU - SSC\ALU - SSC.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

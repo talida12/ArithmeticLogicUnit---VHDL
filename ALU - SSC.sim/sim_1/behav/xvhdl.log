@@ -1,0 +1,18 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TwosComplement
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RightShifter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/FDN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FDN
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH_FD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothUC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BoothUC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BoothMultiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sim_1/new/tb_BoothMultiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_BoothMultiplier

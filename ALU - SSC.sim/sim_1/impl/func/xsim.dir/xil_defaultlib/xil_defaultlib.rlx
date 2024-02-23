@@ -1,0 +1,10 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/impl/func/RestoringDivision_TB_func_impl.vhd,1703270933,vhdl,,,,alu;boothmultiplier;boothuc;fdn;mpg;mpg_0;rightshifter;rightshifter_1;ssd;xil_defaultlib_fd,,,,,,,,
+C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sim_1/new/RestoringDivision_TB.vhd,1703270541,vhdl,,,,restoringdivision_tb,,,,,,,,
+C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd,1701432248,vhdl,,,,carrylookaheadadder,,,,,,,,
+C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd,1700774372,vhdl,,,,partialfulladder,,,,,,,,
+C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd,1701437013,vhdl,,,,restoringdivision,,,,,,,,
+C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd,1701206743,vhdl,,,,twoscomplement,,,,,,,,

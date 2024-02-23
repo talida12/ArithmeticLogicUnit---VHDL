@@ -1,0 +1,474 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan 08 16:25:29 2024
+# Process ID: 13364
+# Current directory: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/synth_1
+# Command line: vivado.exe -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/synth_1/ALU.vds
+# Journal file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19508 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 283.617 ; gain = 73.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:41]
+INFO: [Synth 8-3491] module 'TwosComplement' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:34' bound to instance 'GENERATE_in1_COMPLEMENT' of component 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'TwosComplement' (1#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:40]
+INFO: [Synth 8-3491] module 'TwosComplement' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:34' bound to instance 'GENERATE_Q_COMPLEMENT' of component 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:166]
+INFO: [Synth 8-3491] module 'TwosComplement' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:34' bound to instance 'GENERATE_R_COMPLEMENT' of component 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:167]
+WARNING: [Synth 8-614] signal 'in1_complemented' is read in the process but is not in the sensitivity list [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:170]
+WARNING: [Synth 8-614] signal 'in2_complemented' is read in the process but is not in the sensitivity list [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:170]
+INFO: [Synth 8-3491] module 'CarryLookAheadAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:25' bound to instance 'GENERATE_SUM' of component 'CarryLookAheadAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'CarryLookAheadAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:34]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA0' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'PartialFullAdder' (2#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:43]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA1' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:51]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA2' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:52]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA3' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:53]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA4' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:54]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA5' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:55]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA6' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:56]
+INFO: [Synth 8-3491] module 'PartialFullAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:34' bound to instance 'PFA7' of component 'PartialFullAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'CarryLookAheadAdder' (3#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:34]
+INFO: [Synth 8-3491] module 'TwosComplement' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:34' bound to instance 'GENERATE_B_COMPLEMENT' of component 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:192]
+INFO: [Synth 8-3491] module 'CarryLookAheadAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:25' bound to instance 'GENERATE_DIFFERENCE' of component 'CarryLookAheadAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:194]
+INFO: [Synth 8-3491] module 'BoothMultiplier' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:35' bound to instance 'GENERATE_PRODUCT' of component 'BoothMultiplier' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'BoothMultiplier' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:47]
+INFO: [Synth 8-3491] module 'BoothUC' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothUC.vhd:34' bound to instance 'BOOTH_UC' of component 'BoothUC' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'BoothUC' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothUC.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'BoothUC' (4#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothUC.vhd:49]
+INFO: [Synth 8-3491] module 'FDN' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/FDN.vhd:34' bound to instance 'BOOTH_FDN' of component 'FDN' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'FDN' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/FDN.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'FDN' (5#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/FDN.vhd:42]
+INFO: [Synth 8-3491] module 'TwosComplement' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:34' bound to instance 'COMPLEMENT' of component 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:125]
+INFO: [Synth 8-3491] module 'CarryLookAheadAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:25' bound to instance 'ADDER' of component 'CarryLookAheadAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:126]
+INFO: [Synth 8-3491] module 'RightShifter' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd:34' bound to instance 'SHIFT_RIGHT_A' of component 'RightShifter' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'RightShifter' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'RightShifter' (6#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd:44]
+INFO: [Synth 8-3491] module 'RightShifter' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd:34' bound to instance 'SHIFT_RIGHT_Q' of component 'RightShifter' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:128]
+INFO: [Synth 8-3491] module 'FD' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH_FD.vhd:6' bound to instance 'BOOTH_FD' of component 'FD' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_FD' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH_FD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_FD' (7#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH_FD.vhd:14]
+WARNING: [Synth 8-3848] Net STOP in module/entity BoothMultiplier does not have driver. [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:43]
+WARNING: [Synth 8-3848] Net ProductReady in module/entity BoothMultiplier does not have driver. [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'BoothMultiplier' (8#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:47]
+INFO: [Synth 8-3491] module 'RestoringDivision' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:37' bound to instance 'GENERATE_DIVISION' of component 'RestoringDivision' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'RestoringDivision' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:48]
+INFO: [Synth 8-3491] module 'TwosComplement' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:34' bound to instance 'COMPLEMENT' of component 'TwosComplement' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:80]
+INFO: [Synth 8-3491] module 'CarryLookAheadAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:25' bound to instance 'ADDER' of component 'CarryLookAheadAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:81]
+INFO: [Synth 8-3491] module 'CarryLookAheadAdder' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:25' bound to instance 'SUBTRACTOR' of component 'CarryLookAheadAdder' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'RestoringDivision' (9#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:48]
+WARNING: [Synth 8-614] signal 'quotient_c' is read in the process but is not in the sensitivity list [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:206]
+WARNING: [Synth 8-614] signal 'remainder_c' is read in the process but is not in the sensitivity list [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:206]
+WARNING: [Synth 8-614] signal 'Q' is read in the process but is not in the sensitivity list [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:252]
+WARNING: [Synth 8-614] signal 'R' is read in the process but is not in the sensitivity list [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:252]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/SSD.vhd:35' bound to instance 'SSD_DISPLAY' of component 'SSD' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/SSD.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (10#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/SSD.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:41]
+WARNING: [Synth 8-3331] design BoothMultiplier has unconnected port STOP
+WARNING: [Synth 8-3331] design BoothMultiplier has unconnected port ProductReady
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[12]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[11]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[10]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[9]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[8]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[7]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[6]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[5]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 322.145 ; gain = 111.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 322.145 ; gain = 111.785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/40756/Desktop/constraints.xdc]
+Finished Parsing XDC File [C:/Users/40756/Desktop/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/40756/Desktop/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ALU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ALU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 615.328 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'BoothUC'
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RestoringDivision'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                begin_it |                             0000 |                             0000
+                    init |                             0001 |                             0001
+                  verify |                             0010 |                             0010
+                     add |                             0011 |                             0011
+                subtract |                             0100 |                             0100
+                   shift |                             0101 |                             0101
+             decrement_c |                             0110 |                             0110
+                verify_c |                             0111 |                             0111
+                  finish |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'BoothUC'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                             0000 |                             0000
+              left_shift |                             0001 |                             0011
+        left_shift_prime |                             0010 |                             0001
+                split_aq |                             0011 |                             0101
+              subtract_b |                             0100 |                             0010
+               assign_q0 |                             0101 |                             0110
+                   add_b |                             0110 |                             0100
+              subtract_c |                             0111 |                             0111
+                verify_c |                             1000 |                             1000
+                  finish |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'RestoringDivision'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 136   
++---Registers : 
+	               31 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     31 Bit        Muxes := 1     
+	  10 Input     31 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 10    
+	  10 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 6     
+	  13 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 7     
+Module TwosComplement 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+Module PartialFullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module BoothUC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
++---Muxes : 
+	   9 Input     31 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 7     
+Module FDN 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module RightShifter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module xil_defaultlib_FD 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module RestoringDivision 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
++---Muxes : 
+	  10 Input     31 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 5     
+Module SSD 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design ALU has unconnected port led[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[12]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[11]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[10]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[9]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[8]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[7]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[6]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[5]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[3]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[2]
+WARNING: [Synth 8-3331] design ALU has unconnected port led[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[12]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[11]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[10]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[9]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[8]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[7]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[6]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[5]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port sw[3]
+INFO: [Synth 8-3886] merging instance 'GENERATE_PRODUCT/BOOTH_FDN/QQ_reg[7]' (FDRE) to 'GENERATE_PRODUCT/BOOTH_FDN/QQ_reg[5]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |    79|
+|4     |LUT2   |    11|
+|5     |LUT3   |    22|
+|6     |LUT4   |    40|
+|7     |LUT5   |    39|
+|8     |LUT6   |   103|
+|9     |FDRE   |   158|
+|10    |IBUF   |     7|
+|11    |OBUF   |    13|
+|12    |OBUFT  |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------+------+
+|      |Instance            |Module            |Cells |
++------+--------------------+------------------+------+
+|1     |top                 |                  |   507|
+|2     |  GENERATE_DIVISION |RestoringDivision |   229|
+|3     |  GENERATE_PRODUCT  |BoothMultiplier   |   174|
+|4     |    BOOTH_FD        |xil_defaultlib_FD |     1|
+|5     |    BOOTH_FDN       |FDN               |    17|
+|6     |    BOOTH_UC        |BoothUC           |   115|
+|7     |    SHIFT_RIGHT_A   |RightShifter      |    23|
+|8     |    SHIFT_RIGHT_Q   |RightShifter_0    |    18|
+|9     |  SSD_DISPLAY       |SSD               |    59|
++------+--------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 615.328 ; gain = 111.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 615.328 ; gain = 404.969
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 615.328 ; gain = 404.969
+INFO: [Common 17-1381] The checkpoint 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/synth_1/ALU.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 615.328 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 08 16:26:08 2024...

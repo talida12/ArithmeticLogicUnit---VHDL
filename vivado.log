@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jan 02 14:19:56 2024
+# Process ID: 21852
+# Current directory: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22924 C:\Users\40756\Desktop\An 3 Sem 1\SSC\Proiect\ALU - SSC\ALU - SSC.xpr
+# Log file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/vivado.log
+# Journal file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 794.145 ; gain = 122.734
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ALU.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH_FD.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BOOTH_FD.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothMultiplier.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothUC.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/BoothUC.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/FDN.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/FDN.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/MPG.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/MPG.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RestoringDivision.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/RightShifter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/SSD.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/SSD.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/TwosComplement.vhd:1]
+[Tue Jan 02 14:21:11 2024] Launched synth_1...
+Run output will be captured here: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/synth_1/runme.log
+launch_runs impl_1
+[Tue Jan 02 14:22:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jan 02 14:25:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 819.836 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AB39B7A
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Tue Jan 02 14:31:47 2024] Launched impl_1...
+Run output will be captured here: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.runs/impl_1/ALU.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 02 14:37:29 2024...

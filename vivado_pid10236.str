@@ -1,0 +1,159 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 10236
+
+Current time: 	11/26/23 4:21:52 PM EET
+Time zone: 	Eastern European Time (Europe/Athens)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	40756
+User home directory: C:/Users/40756
+User working directory: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC
+User country: 	RO
+User language: 	ro
+User locale: 	ro_RO
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/40756/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/40756/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 507 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\40756\Desktop\An 3 Sem 1\SSC\Proiect\ALU - SSC\ALU - SSC.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.xpr} 
+// [GUI Memory]: 35 MB (+33762kb) [00:00:05]
+// [Engine Memory]: 411 MB (+279009kb) [00:00:05]
+// Tcl Message: open_project {C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/40756/Desktop/ALU - SSC' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 68 MB (+33031kb) [00:00:06]
+// [Engine Memory]: 436 MB (+4794kb) [00:00:06]
+// [Engine Memory]: 498 MB (+42197kb) [00:00:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: ALU - SSC; location: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC; part: xc7a35tcpg236-1
+// HMemoryUtils.trashcanNow. Engine heap size: 514 MB. GUI used memory: 30 MB. Current time: 11/26/23 4:21:53 PM EET
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CarryLookAheadAdder - Behavioral (CarryLookAheadAdder.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CarryLookAheadAdder - Behavioral (CarryLookAheadAdder.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CarryLookAheadAdder - Behavioral (CarryLookAheadAdder.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Booth - Behavioral (Booth.vhd)]", 10); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Booth - Behavioral (Booth.vhd)]", 10, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Booth - Behavioral (Booth.vhd)]", 10, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("Booth.vhd", 245, 54); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 524 MB (+1510kb) [00:00:52]
+selectCodeEditor("Booth.vhd", 374, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // y:JideButton (y:C, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+selectCodeEditor("Booth.vhd", 424, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 467, 301); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 499, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("Booth.vhd", 968, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 907, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 530, 257); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 533, 254); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 502, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 499, 305); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 513, 209); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 566, 213); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 448, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 536, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 660, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 634, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 388, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 591, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 597, 269); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 65 seconds
+selectCodeEditor("Booth.vhd", 718, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 653, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 628, 314); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 554, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 569, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 561, 209); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 650, 172); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Booth.vhd", 605, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 51 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Booth - Behavioral (Booth.vhd)]", 10, true); // y:i (D:JPanel, cd:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Booth - Behavioral (Booth.vhd)]", 10); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Booth - Behavioral (Booth.vhd)]", 10); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 15); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Booth_tb - Behavioral (Booth_tb.vhd)]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // w:k (K:JPanel, cd:JFrame)
+// [GUI Memory]: 73 MB (+1953kb) [00:04:40]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Simulation Settings]", 10, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Project Settings: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -noclean_dir 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'Booth_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/behav' 
+// Tcl Message: "xvhdl -m64 --relax -prj Booth_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// HMemoryUtils.trashcanNow. Engine heap size: 541 MB. GUI used memory: 38 MB. Current time: 11/26/23 4:26:33 PM EET
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot Booth_tb_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 800.492 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "Booth_tb_behav -key {Behavioral:sim_1:Functional:Booth_tb} -tclbatch {Booth_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// Elapsed time: 38 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, e:bt)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, e:bt)
+// 'd' command handler elapsed time: 40 seconds

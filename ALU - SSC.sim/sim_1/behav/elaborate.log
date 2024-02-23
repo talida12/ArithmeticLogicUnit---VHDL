@@ -1,0 +1,25 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_BoothMultiplier_behav xil_defaultlib.tb_BoothMultiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.BoothUC [boothuc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FDN [fdn_default]
+Compiling architecture behavioral of entity xil_defaultlib.TwosComplement [twoscomplement_default]
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.RightShifter [rightshifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.FD [fd_default]
+Compiling architecture behavioral of entity xil_defaultlib.BoothMultiplier [boothmultiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_boothmultiplier
+ERROR: [XSIM 43-3413] GNU binutils package not found, please install GNU binutils for your Linux distribution.
+ERROR: [XSIM 43-3915] Encountered a fatal error. Cannot continue. Exiting... 

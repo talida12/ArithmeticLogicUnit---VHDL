@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Nov 24 00:07:45 2023
+# Process ID: 8004
+# Current directory: C:/Users/40756/Desktop/ALU - SSC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13596 C:\Users\40756\Desktop\ALU - SSC\ALU - SSC.xpr
+# Log file: C:/Users/40756/Desktop/ALU - SSC/vivado.log
+# Journal file: C:/Users/40756/Desktop/ALU - SSC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.xpr}
+launch_simulation -noclean_dir
+source CLA_TestBench.tcl
+close_sim
+launch_simulation -noclean_dir
+source CLA_TestBench.tcl
+close_sim
+launch_simulation -noclean_dir
+source CLA_TestBench.tcl
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation -noclean_dir
+source CLA_TestBench.tcl
+close_sim
+launch_simulation -noclean_dir
+source CLA_TestBench.tcl
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation -noclean_dir
+source CLA_TestBench.tcl
+launch_simulation -noclean_dir
+source CarryLookAheadAdder.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source CarryLookAheadAdder.tcl
+set_property -name {xsim.simulate.runtime} -value {30ns} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source CarryLookAheadAdder.tcl
+close_sim
+launch_simulation
+source CarryLookAheadAdder.tcl
+update_compile_order -fileset sim_1
+current_sim simulation_6
+close_sim
+launch_simulation
+source CLA_TestBench.tcl
+add_bp {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} 65
+add_bp {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} 76
+remove_bps -file {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} -line 65
+remove_bps -file {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} -line 76
+close_sim
+launch_simulation
+source CLA_TestBench.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source CLA_TestBench.tcl
+close_sim
+close_sim

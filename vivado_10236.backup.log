@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Nov 26 16:21:37 2023
+# Process ID: 10236
+# Current directory: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22860 C:\Users\40756\Desktop\An 3 Sem 1\SSC\Proiect\ALU - SSC\ALU - SSC.xpr
+# Log file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/vivado.log
+# Journal file: C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/40756/Desktop/ALU - SSC' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Booth_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Booth_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/XOR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity XOR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/OR2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity OR2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/AND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity AND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/NOT1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NOT1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/fulladder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fulladder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/two_to_one_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity two_to_one_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/rca_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rca_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/halfadd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity halfadd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/increment_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity increment_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_4bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_4bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_2bit_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_2bit_block
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/twoscomp_9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity twoscomp_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/NAND2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity NAND2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_14bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_14bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_12bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_12bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/csa_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity csa_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/barrel_shift9bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity barrel_shift_9bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/DFF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DFF
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_unit_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_unit_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/booth_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity booth_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register_16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/operand_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operand_register
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/ba_dut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ba_dut
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sources_1/new/Booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.srcs/sim_1/new/Booth_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Booth_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Booth_tb_behav xil_defaultlib.Booth_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.NAND2 [nand2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NAND3 [nand3_default]
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register [operand_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.XOR2 [xor2_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOT1 [not1_default]
+Compiling architecture behavioral of entity xil_defaultlib.AND2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.OR2 [or2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_decoder [booth_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.halfadd [halfadd_default]
+Compiling architecture behavioral of entity xil_defaultlib.increment_9bit [increment_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.twoscomp_9bit [twoscomp_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.two_to_one_mux [two_to_one_mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.barrel_shift_9bit [barrel_shift_9bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_0 [booth_unit_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_1 [booth_unit_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_2 [booth_unit_2_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_unit_3 [booth_unit_3_default]
+Compiling architecture behavioral of entity xil_defaultlib.fulladder [fulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.rca_4bit_block [rca_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_4bit_block [csa_4bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_2bit_block [csa_2bit_block_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_10bit [csa_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_14bit [csa_14bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.csa_12bit [csa_12bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_adder [booth_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.ba_dut [ba_dut_default]
+Compiling architecture behavioral of entity xil_defaultlib.operand_register_16bit [operand_register_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Booth [booth_default]
+Compiling architecture behavioral of entity xil_defaultlib.booth_tb
+Built simulation snapshot Booth_tb_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 800.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/An 3 Sem 1/SSC/Proiect/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Booth_tb_behav -key {Behavioral:sim_1:Functional:Booth_tb} -tclbatch {Booth_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

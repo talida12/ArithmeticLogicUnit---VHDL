@@ -1,0 +1,893 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Nov 24 00:07:45 2023
+# Process ID: 8004
+# Current directory: C:/Users/40756/Desktop/ALU - SSC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13596 C:\Users\40756\Desktop\ALU - SSC\ALU - SSC.xpr
+# Log file: C:/Users/40756/Desktop/ALU - SSC/vivado.log
+# Journal file: C:/Users/40756/Desktop/ALU - SSC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 24 00:08:13 2023...
+: peak = 785.344 ; gain = 105.141
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:56 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:58 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:01:03 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:06:43 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:18 ; elapsed = 00:06:45 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:19 ; elapsed = 00:06:49 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 200ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:03:40 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:03:41 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:03:46 . Memory (MB): peak = 860.508 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:07:15 . Memory (MB): peak = 875.195 ; gain = 2.707
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:07:17 . Memory (MB): peak = 875.195 ; gain = 2.707
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:07:21 . Memory (MB): peak = 875.195 ; gain = 2.707
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:02:22 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:02:23 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:02:28 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+run 100 ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run 100 ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:52 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:01:15 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:01:16 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:01:21 . Memory (MB): peak = 875.195 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -noclean_dir
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CarryLookAheadAdder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CarryLookAheadAdder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CarryLookAheadAdder_behav xil_defaultlib.CarryLookAheadAdder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookaheadadder
+Built simulation snapshot CarryLookAheadAdder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CarryLookAheadAdder_behav -key {Behavioral:sim_1:Functional:CarryLookAheadAdder} -tclbatch {CarryLookAheadAdder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CarryLookAheadAdder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 878.715 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 878.715 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 878.715 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd:1]
+[Fri Nov 24 00:40:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CarryLookAheadAdder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CarryLookAheadAdder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CarryLookAheadAdder_behav xil_defaultlib.CarryLookAheadAdder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookaheadadder
+Built simulation snapshot CarryLookAheadAdder_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 910.910 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CarryLookAheadAdder_behav -key {Behavioral:sim_1:Functional:CarryLookAheadAdder} -tclbatch {CarryLookAheadAdder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CarryLookAheadAdder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:02:59 . Memory (MB): peak = 920.828 ; gain = 9.918
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:03:00 . Memory (MB): peak = 920.828 ; gain = 9.918
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:03:08 . Memory (MB): peak = 920.828 ; gain = 9.918
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+set_property -name {xsim.simulate.runtime} -value {30ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CarryLookAheadAdder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CarryLookAheadAdder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CarryLookAheadAdder_behav xil_defaultlib.CarryLookAheadAdder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookaheadadder
+Built simulation snapshot CarryLookAheadAdder_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CarryLookAheadAdder_behav -key {Behavioral:sim_1:Functional:CarryLookAheadAdder} -tclbatch {CarryLookAheadAdder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CarryLookAheadAdder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:28 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CarryLookAheadAdder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CarryLookAheadAdder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CarryLookAheadAdder_behav xil_defaultlib.CarryLookAheadAdder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.carrylookaheadadder
+Built simulation snapshot CarryLookAheadAdder_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CarryLookAheadAdder_behav -key {Behavioral:sim_1:Functional:CarryLookAheadAdder} -tclbatch {CarryLookAheadAdder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CarryLookAheadAdder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:02:58 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:02:59 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:03:05 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sim_1
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CarryLookAheadAdder_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:37 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:38 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:44 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+add_bp {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} 65
+add_bp {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} 76
+remove_bps -file {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} -line 65
+remove_bps -file {C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd} -line 76
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CarryLookAheadAdder_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/PartialFullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PartialFullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CarryLookAheadAdder
+WARNING: [VRFC 10-1256] possible infinite loop; process does not have a wait statement [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sources_1/new/CarryLookAheadAdder.vhd:66]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.PartialFullAdder [partialfulladder_default]
+Compiling architecture behavioral of entity xil_defaultlib.CarryLookAheadAdder [carrylookaheadadder_default]
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 920.828 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CarryLookAheadAdder_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/CLA_TestBench_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CLA_TestBench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj CLA_TestBench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLA_TestBench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto 253dcd6c227145348b8fff94dec4fa5d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CLA_TestBench_behav xil_defaultlib.CLA_TestBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] carrylookaheadadder remains a black-box since it has no binding entity [C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.srcs/sim_1/new/CLA_TestBench.vhd:54]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.cla_testbench
+Built simulation snapshot CLA_TestBench_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/40756/Desktop/ALU - SSC/ALU - SSC.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CLA_TestBench_behav -key {Behavioral:sim_1:Functional:CLA_TestBench} -tclbatch {CLA_TestBench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CLA_TestBench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 30ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CLA_TestBench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 30ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 920.828 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 24 01:01:06 2023...
